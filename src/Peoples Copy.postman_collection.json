@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "da392715-5f0f-49a3-a910-0d6dd3073ec1",
+		"name": "Peoples Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"code\": \"87679\",\r\n        \"name\": \"Johan Alexis\",\r\n        \"code_leader\": \"65775\",\r\n        \"responsibility\": \"Administrador\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit_user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"code\": \"10064\",\r\n        \"name\": \"Johan\",\r\n        \"code_leader\": \"976789\",\r\n        \"responsibility\": \"Desarrollador\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register_department",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"18789\",\r\n    \"name\": \"ingenieria\",\r\n    \"area\": \"Programacion\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_department",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_department"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register_leader",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"1547\",\r\n    \"name\": \"Jhon\",\r\n    \"cod_department\": \"78998\",\r\n    \"hiring_date\": \"10/08/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register_leader",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register_leader"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
